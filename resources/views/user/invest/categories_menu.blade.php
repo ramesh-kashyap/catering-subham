@@ -9,11 +9,22 @@
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item active">Products</li>
+                                
                             </ol>
+                            <div class="col-lg-8 col-sm-6">
+                            <form class="mt-4 mt-sm-0 float-sm-end d-sm-flex align-items-center">
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary waves-effect waves-light mt-2 me-1">
+                                        <i class="bx bx-cart me-2"></i> GO to cart
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                         </div>
                     </div>
                 </div>
             </div>
+           
             <!-- End page title -->
             <div class="row">
                 <div class="col-lg-3">
@@ -54,7 +65,6 @@
             fetchProducts([categoryId]);
         });
     });
-
     function fetchProducts(selectedCategories) {
         if (selectedCategories.length > 0) {
             $.ajax({
